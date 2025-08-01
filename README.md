@@ -90,6 +90,7 @@ var feCaeReq = new AfipServiceReference.FECAERequest
             FchServHasta = "20190717",
             MonCotiz = 1,
             MonId = "PES",
+            CondicionIVAReceptorId = 1,
             Iva = new List<AfipServiceReference.AlicIva>
             {
                 new AfipServiceReference.AlicIva

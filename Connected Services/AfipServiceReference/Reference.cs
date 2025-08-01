@@ -219,7 +219,9 @@ namespace AfipServiceReference
         private string MonIdField;
         
         private double MonCotizField;
-        
+
+        private int CondicionIVAReceptorIdField;
+
         private System.Collections.Generic.List<AfipServiceReference.CbteAsoc> CbtesAsocField;
         
         private System.Collections.Generic.List<AfipServiceReference.Tributo> TributosField;
@@ -450,8 +452,21 @@ namespace AfipServiceReference
                 this.MonCotizField = value;
             }
         }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
+
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired = true, Order = 17)]
+        public int CondicionIVAReceptorId
+        {
+            get
+            {
+                return this.CondicionIVAReceptorIdField;
+            }
+            set
+            {
+                this.CondicionIVAReceptorIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
         public System.Collections.Generic.List<AfipServiceReference.CbteAsoc> CbtesAsoc
         {
             get
@@ -464,7 +479,7 @@ namespace AfipServiceReference
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
         public System.Collections.Generic.List<AfipServiceReference.Tributo> Tributos
         {
             get
@@ -477,7 +492,7 @@ namespace AfipServiceReference
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
         public System.Collections.Generic.List<AfipServiceReference.AlicIva> Iva
         {
             get
@@ -490,7 +505,7 @@ namespace AfipServiceReference
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
         public System.Collections.Generic.List<AfipServiceReference.Opcional> Opcionales
         {
             get
@@ -503,7 +518,7 @@ namespace AfipServiceReference
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
         public System.Collections.Generic.List<AfipServiceReference.Comprador> Compradores
         {
             get
